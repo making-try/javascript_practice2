@@ -10,13 +10,13 @@
       <form>
           <div>
               <label>
-                  <input type="radio" name="task" value="すべて"/>すべて
+                  <input id="task_all" type="radio" name="task" value="すべて"/>すべて
               </label>
               <label>
-                  <input type="radio" name="task" value="作業中"/>作業中
+                  <input id="doing" type="radio" name="task" value="作業中"/>作業中
               </label>
               <label>
-                  <input type="radio" name="task" value="完了"/>完了
+                  <input id="done" type="radio" name="task" value="完了"/>完了
               </label>
           </div>
       </form>
@@ -31,7 +31,7 @@
         <tbody id=todoTable></tbody>
       </table>
 
-      <div id="output"></div>
+      <!--div id="output"></div-->
 
       <form>
           <input id="addTask" name="addTask" type="text" size="30" />
