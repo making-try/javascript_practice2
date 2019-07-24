@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded',function(){
     //getElementById('deleteBtn'としないとEventListenできないが、
     //常にdeleteBtnには最後の要素が格納されている。しかし一番最初の要素の「削除ボタンも」
     //押せるのはなぜだ？？
-    let deleteBtn = document.getElementById('deleteBtn' + taskId);
-    let statusBtn = document.getElementById('statusBtn' + taskId);
+    const deleteBtn = document.getElementById('deleteBtn' + taskId);
+    const statusBtn = document.getElementById('statusBtn' + taskId);
 
     deleteBtn.addEventListener('click',function(){
       //削除する行の行番号を削除ボタンのID名から取得し、配列を作り直す
