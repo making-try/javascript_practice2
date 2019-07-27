@@ -63,7 +63,6 @@ document.addEventListener('DOMContentLoaded',function(){
     deleteBtn.addEventListener('click',function(){
       //削除する行の行番号を削除ボタンのID名から取得し、配列を作り直す
       const tableRowId = deleteBtn.id.slice(10)
-      const tempTasks = [];
       taskLists.forEach(function(taskObj){
         if (taskObj.id === Number(tableRowId)){
           taskLists.splice(taskObj.id, 1);
@@ -80,7 +79,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
     statusBtn.addEventListener('click',function(){
       //ステータスの行番号をボタンのID名から取得し、配列を作り直す
-      let tableRowId = statusBtn.id.slice(10)
+      const tableRowId = statusBtn.id.slice(10)
       taskLists.forEach(function(taskObj){
         if (taskObj.id === Number(tableRowId)){
           if (taskObj.status === '作業中'){
@@ -134,7 +133,7 @@ document.addEventListener('DOMContentLoaded',function(){
   //完了radioボタン押下時のアクション
   radioDone.addEventListener('click',function(){
     const tempTasks = [];
-    taskLists.forEach(function(taskObjc ){
+    taskLists.forEach(function(taskObj ){
       if (taskObj.status === '完了'){
         tempTasks.push(taskObj);
       }
