@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>FizzBuzz課題</title>
+  </head>
+  <body>
+    <h1>ToDoリスト</h1>
+    <h2>新規タスクの追加</h2>
+      <form>
+          <div>
+              <label>
+                  <input id="task-all" type="radio" name="task" value="すべて"/>すべて
+              </label>
+              <label>
+                  <input id="task-doing" type="radio" name="task" value="作業中"/>作業中
+              </label>
+              <label>
+                  <input id="task-done" type="radio" name="task" value="完了"/>完了
+              </label>
+          </div>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>コメント</th>
+            <th>状態</th>
+          </tr>
+        </thead>
+        <tbody id=todo-table></tbody>
+      </table>
+
+      <!--div id="output"></div-->
+
+      <form>
+          <input id="add-task" type="text" size="30" />
+          <input id="add-btn" type="button" value="追加"/>
+      </form>
+      <script type="text/javascript" src="main.js"></script>
+      <noscript>Javascriptが利用できません</noscript>
+  </body>
+</html>
